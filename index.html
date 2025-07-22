@@ -1,67 +1,78 @@
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-            <!-- =====BOX ICONS===== -->
-            <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-            <title>Portfolio website complete</title>
-        </head>
-        <body>
-            <!--===== HEADER =====-->
-            <header class="l-header">
-                <nav class="nav bd-grid">
-                    <div>
-                        <a href="#" class="nav__logo">Vakratund</a>
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Vakratund</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                        <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="nav__actions">
+                    <div class="nav__theme-toggle" id="theme-toggle">
+                        <i class='bx bx-moon theme-icon' id="theme-icon"></i>
                     </div>
-
-                    <div class="nav__menu" id="nav-menu">
-                        <ul class="nav__list">
-                            <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                            <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                            <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
-                        </ul>
-                    </div>
-
+                    
                     <div class="nav__toggle" id="nav-toggle">
                         <i class='bx bx-menu'></i>
                     </div>
-                </nav>
-            </header>
+                </div>
+            </nav>
+        </header>
 
-            <main class="l-main">
-                <!--===== HOME =====-->
-                <section class="home bd-grid" id="home">
-                    <div class="home__data">
-                        <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Vakratund</span><br> Web Designer</h1>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Vakratund</span><br> Web Designer</h1>
 
-                        <a href="#" class="button">Contact</a>
-                    </div>
+                    <a href="mailto:vakratundkulkarni88@gmail.com?subject=Portfolio Contact&body=Hi Vakratund,%0D%0A%0D%0AI found your portfolio and would like to get in touch with you.%0D%0A%0D%0ABest regards," class="button">
+                        <i class='bx bx-mail-send'></i>
+                        Contact
+                    </a>
+                </div>
 
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/vakratund-kulkarni-b86056320/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/vakky69" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    </div>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/vakratund-kulkarni-b86056320/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/VakkyCodes" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
 
-                    <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                                <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                            </g>
-                            
-                        </svg>
-                    </div>
-                </section>
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                        
+                    </svg>
+                </div>
+            </section>
 
                 <!--===== ABOUT =====-->
                 <section class="about section " id="about">
@@ -74,10 +85,116 @@
                         
                         <div>
                             <h2 class="about__subtitle">I'am Vakratund</h2>
-                            <p class="about__text">I'm a passionate 3rd-year Computer Engineering student at K.K. Wagh Institute of Engineering Education & Research, Nashik. With a strong foundation in programming, data structures, and software development, my interest lies in AI and ML for innovative solutions.
+                            <p class="about__text">I'm a passionate 4th-year Computer Engineering student at K.K. Wagh Institute of Engineering Education & Research, Nashik. With a strong foundation in programming, data structures, and software development, my interest lies in AI and ML for innovative solutions.
 
                                 Outside academics, I'm an avid volleyball player, learning teamwork and strategic thinking, and a part-time YouTuber sharing my experiences.</p>           
                         </div>                                   
+                    </div>
+                </section>
+
+                <!--===== EXPERIENCE =====-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__timeline">
+                                
+                                <!-- Current Position -->
+                                <div class="experience__item experience__item--current">
+                                    <div class="experience__marker">
+                                        <i class='bx bxs-briefcase'></i>
+                                    </div>
+                                    <div class="experience__data">
+                                        <div class="experience__header">
+                                            <h3 class="experience__title">Full Stack Developer</h3>
+                                            <div class="experience__company">
+                                                <i class='bx bxs-buildings'></i>
+                                                <span>iNew Technologies</span>
+                                            </div>
+                                            <div class="experience__duration">
+                                                <i class='bx bx-calendar'></i>
+                                                <span>2025 - Present</span>
+                                            </div>
+                                        </div>
+                                        <div class="experience__description">
+                                            <p>Currently developing scalable web applications and contributing to full-stack projects using modern JavaScript frameworks and backend technologies.</p>
+                                            <div class="experience__skills">
+                                                <span class="experience__skill">React</span>
+                                                <span class="experience__skill">Node.js</span>
+                                                <span class="experience__skill">JavaScript</span>
+                                                <span class="experience__skill">MongoDB</span>
+                                                <span class="experience__skill">Express.js</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Previous Position -->
+                                <div class="experience__item">
+                                    <div class="experience__marker">
+                                        <i class='bx bxs-brain'></i>
+                                    </div>
+                                    <div class="experience__data">
+                                        <div class="experience__header">
+                                            <h3 class="experience__title">Machine Learning Intern</h3>
+                                            <div class="experience__company">
+                                                <i class='bx bxs-buildings'></i>
+                                                <span>Infosys</span>
+                                            </div>
+                                            <div class="experience__duration">
+                                                <i class='bx bx-calendar'></i>
+                                                <span>2025</span>
+                                            </div>
+                                        </div>
+                                        <div class="experience__description">
+                                            <p>Gained practical experience in machine learning algorithms, data preprocessing, and model deployment while working on real-world ML projects in a professional environment.</p>
+                                            <div class="experience__skills">
+                                                <span class="experience__skill">Python</span>
+                                                <span class="experience__skill">Machine Learning</span>
+                                                <span class="experience__skill">Data Analysis</span>
+                                                <span class="experience__skill">Jupyter</span>
+                                                <span class="experience__skill">Pandas</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--===== RESUME =====-->
+                <section class="resume section" id="resume">
+                    <h2 class="section-title">Resume</h2>
+
+                    <div class="resume__container bd-grid">
+                        <div class="resume__content">
+                            <div class="resume__info">
+                                <h3 class="resume__title">Download My Resume</h3>
+                                <p class="resume__description">
+                                    Get a detailed overview of my skills, experience, and projects. 
+                                    My resume includes my technical expertise, academic background, and professional journey.
+                                </p>
+                                <div class="resume__buttons">
+                                    <a href="assets/resume/Vakratund_Resume.pdf" download="Vakratund_Kulkarni_Resume.pdf" class="button resume__button">
+                                        <i class='bx bx-download'></i>
+                                        Download PDF
+                                    </a>
+                                    <a href="assets/resume/Vakratund_Resume.pdf" target="_blank" class="button resume__button resume__button--outline">
+                                        <i class='bx bx-show'></i>
+                                        View Online
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="resume__img">
+                                <div class="resume__preview">
+                                    <i class='bx bxs-file-pdf resume__icon'></i>
+                                    <span class="resume__text">Resume.pdf</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -156,28 +273,28 @@
                             
                         </a><h2 class="p-title">Connectify</h2></div>
                         <div class="work__item">
-                        <a href="https://vakky69.github.io/gromart/main.html" class="work__img">
-                            <img src="assets/img/image2.jpg" alt="">
+                        <a href="https://www.linkedin.com/posts/vakratund-kulkarni-b86056320_ai-backenddevelopment-techinnovation-activity-7317581579487182848-CTpX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFEqRBYBs3ivi9WBn9C-sad5zkkgC6CERWE" class="work__img">
+                            <img src="assets/img/AI Agent Design with Logos.png" alt="">
                         
-                        </a><h2 class="p-title">Growmart</h2>
+                        </a><h2 class="p-title">AI Agent</h2>
                         </div>
                         <div class="work__item">
-                        <a href="https://www.linkedin.com/posts/vakratund-kulkarni-b86056320_webdevelopment-expressjs-backenddevelopment-activity-7282820019812462593-5Q5A?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFEqRBYBs3ivi9WBn9C-sad5zkkgC6CERWE" class="work__img">
-                            <img src="assets/img/image3.jpg" alt="">
+                        <a href="https://github.com/VakkyCodes/PayWallet" class="work__img">
+                            <img src="assets/img/Fintech.png" alt="">
                 
-                        </a><h2 class="p-title">Dyno cards</h2>
+                        </a><h2 class="p-title">PayWallet</h2>
                         </div>
                         <div class="work__item">
-                        <a href="https://vakky69.github.io/weather/" class="work__img">
-                            <img src="assets/img/image4.jpg" alt="">
+                        <a href="https://www.linkedin.com/posts/vakratund-kulkarni-b86056320_infosys-internship-machinelearning-activity-7343205514345869314-wyv3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFEqRBYBs3ivi9WBn9C-sad5zkkgC6CERWE" class="work__img">
+                            <img src="assets/img/Screenshot 2025-07-22 204827.png" alt="">
                         
-                        </a><h2 class="p-title">Weather_forecasting</h2>
+                        </a><h2 class="p-title">Glucosense </h2>
                         </div>
                         <div class="work__item">
-                        <a href="https://vakky69.github.io/Menucard/" class="work__img">
-                            <img src="assets/img/work5.jpg" alt="">
+                        <a href="https://www.linkedin.com/posts/vakratund-kulkarni-b86056320_webdevelopment-nodejs-socketio-activity-7319060526657880065-1EPh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFEqRBYBs3ivi9WBn9C-sad5zkkgC6CERWE" class="work__img">
+                            <img src="assets/img/ChatGPT Image Jul 22, 2025, 08_41_23 PM.png" alt="">
                             
-                        </a><h2 class="p-title">MenuCards</h2>
+                        </a><h2 class="p-title">Tracking app</h2>
                         </div>
                         <div class="work__item">
                         <a href="https://www.linkedin.com/posts/vakratund-kulkarni-b86056320_webdevelopment-animation-gsap-activity-7289565408934703105-lDw3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFEqRBYBs3ivi9WBn9C-sad5zkkgC6CERWE" class="work__img">
@@ -207,11 +324,11 @@
             <footer class="footer">
                 <p class="footer__title">Vakratund</p>
                 <div class="footer__social">
-                    <a href="" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.facebook.com/kushagra.kulkarni.790" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
                     <a href="https://www.instagram.com/vakratund26/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 
                 </div>
-                <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+                <p class="footer__copy">&#169; Vakky. All rights reserved</p>
             </footer>
 
 
